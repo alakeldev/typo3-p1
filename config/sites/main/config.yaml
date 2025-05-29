@@ -1,5 +1,4 @@
 base: 'https://portfolio.ddev.site/'
-errorHandling: {  }
 languages:
   -
     title: English
@@ -10,4 +9,4 @@ languages:
     navigationTitle: English
     flag: us
 rootPageId: 1
-routes: {  }
+websiteTitle: Portfolio

@@ -4,8 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a751fdadce06bf32e23bd53515ca93ba",
+    "content-hash": "511767733ec1d1a64e26563235ab3a86",
     "packages": [
+        {
+            "name": "alakel/portfolio_package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/portfolio_package",
+                "reference": "abb3bdc6e685b84944a3826d2ed88b58ed1c7f25"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Alakel\\PortfolioPackage\\": "Classes/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Abdullah Alakel",
+                    "email": "abdullah.k.alakel@gmail.com"
+                }
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "bacon/bacon-qr-code",
             "version": "v3.0.1",
@@ -6890,13 +6914,15 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "alakel/portfolio_package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2.0"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }
