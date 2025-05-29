@@ -31,20 +31,20 @@ ddev exec ./vendor/bin/typo3 setup \
 ###### mkdir package_name && cd package_name
 ###### composer init
 
-{
-	Package name (<vendor>/<name>) [aaaa/aaaa_package]:
-	Description []:
-	Author [your name <your email>, n to skip]: 
-	Minimum Stability []: 
-	Package Type (e.g. library, project, metapackage, composer-plugin) []: typo3-cms-extension
-	License []: 
-	Define your dependencies.
-	Would you like to define your dependencies (require) interactively [yes]? 
-	Search for a package: 
-	Would you like to define your dev dependencies (require-dev) interactively [yes]? 
-	Search for a package: 
-	Add PSR-4 autoload mapping? Maps namespace "vendor\PackageName" to the entered relative path. [src/, n to skip]: Classes/
-}
+* {
+	* Package name (<vendor>/<name>) [aaaa/aaaa_package]:
+	* Description []:
+	* Author [your name <your email>, n to skip]: 
+	* Minimum Stability []: 
+	* Package Type (e.g. library, project, metapackage, composer-plugin) []: typo3-cms-extension
+	* License []: 
+	* Define your dependencies.
+	* Would you like to define your dependencies (require) interactively [yes]? 
+	* Search for a package: 
+	* Would you like to define your dev dependencies (require-dev) interactively [yes]? 
+	* Search for a package: 
+	* Add PSR-4 autoload mapping? Maps namespace "vendor\PackageName" to the entered relative path. [src/, n to skip]: Classes/
+* }
 
 ###### composer dump-autoload       (to ensure PHP can find and load classes correctly &  Registers new PSR-4 namespaces you defined)
 
