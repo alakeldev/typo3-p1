@@ -4,7 +4,6 @@ nbproject
 /var/*
 !/var/labels
 /vendor
-/packages/*/vendor
 /public/*
 !/public/.htaccess
 *.sql

@@ -1,4 +1,4 @@
-base: 'https://portfolio.ddev.site/'
+base: 'https://portfolio-template.ddev.site/'
 languages:
   -
     title: English

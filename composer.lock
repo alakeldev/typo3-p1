@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "511767733ec1d1a64e26563235ab3a86",
+    "content-hash": "58f111e6c030873d7bf86af0a9c6d4a5",
     "packages": [
         {
             "name": "alakel/portfolio_package",
@@ -12,9 +12,14 @@
             "dist": {
                 "type": "path",
                 "url": "packages/portfolio_package",
-                "reference": "abb3bdc6e685b84944a3826d2ed88b58ed1c7f25"
+                "reference": "82d005018bf5071db69ef2a31cb0cb67a75c8ddb"
             },
             "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "portfolio_package"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Alakel\\PortfolioPackage\\": "Classes/"

@@ -12,5 +12,10 @@
             "email": "abdullah.k.alakel@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "portfolio_package"
+        }
+    }
 }

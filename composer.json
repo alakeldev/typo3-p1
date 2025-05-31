@@ -41,14 +41,14 @@
         "typo3/cms-viewpage": "^13.4",
         "typo3/cms-webhooks": "^13.4"
     },
-    "repositories": {
-        "portfolio_package": {
+    "repositories": [
+        {
             "type": "path",
             "url": "packages/portfolio_package"
         },
-        "0": {
+        {
             "type": "path",
             "url": "./packages/*"
         }
-    }
+    ]
 }
