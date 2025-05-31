@@ -1,2 +1,10 @@
-<h2>{data.header}</h2>
-<p>{data.bodytext}</p>
+<article class="portfolio-project-item">
+    <h3>{data.header}</h3>
+    <f:if condition="{data.image}">
+        <img src="" alt="{data.header}" />
+    </f:if>
+    <p>{data.bodytext}</p>
+    <f:if condition="{data.link}">
+        <a href="" class="btn btn-secondary" target="_blank" rel="noopener">View Project</a>
+    </f:if>
+</article>

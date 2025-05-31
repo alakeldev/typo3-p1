@@ -1,5 +1,7 @@
 page = PAGE
 page.10 < styles.content.get
+page.includeCSS.portfolio = EXT:portfolio_package/Resources/Public/Css/style.css
+
 
 tt_content.portfolio_header =< lib.contentElement
 tt_content.portfolio_header {
