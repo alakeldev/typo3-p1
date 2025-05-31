@@ -1,3 +1,50 @@
 page = PAGE
-page.10 = TEXT
-page.10.value = Hello I'm Abdullah from portfolio_package
+page.10 < styles.content.get
+
+tt_content.portfolio_header =< lib.contentElement
+tt_content.portfolio_header {
+  templateName = Header
+  templateRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
+  }
+}
+
+tt_content.portfolio_hero =< lib.contentElement
+tt_content.portfolio_hero {
+  templateName = Hero
+  templateRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
+  }
+}
+
+tt_content.portfolio_aboutblock =< lib.contentElement
+tt_content.portfolio_aboutblock {
+  templateName = Aboutblock
+  templateRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
+  }
+}
+
+tt_content.portfolio_projectitem =< lib.contentElement
+tt_content.portfolio_projectitem {
+  templateName = ProjectItem
+  templateRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
+  }
+}
+
+tt_content.portfolio_contactblock =< lib.contentElement
+tt_content.portfolio_contactblock {
+  templateName = Contactblock
+  templateRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
+  }
+}
+
+tt_content.portfolio_footer =< lib.contentElement
+tt_content.portfolio_footer {
+  templateName = Footer
+  templateRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
+  }
+}
