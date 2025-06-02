@@ -12,7 +12,7 @@ $elements = [
         'label'  => 'Header',
         'value'  => 'portfolio_header',
         'icon'   => 'EXT:portfolio_package/Resources/Public/Icons/ce_header.svg',
-        'fields' => '--palette--;;headers,',
+        'fields' => '--palette--;;headers, image,',
     ],
     [
         'label'  => 'Hero Section',
@@ -42,9 +42,41 @@ $elements = [
         'label'  => 'Footer',
         'value'  => 'portfolio_footer',
         'icon'   => 'EXT:portfolio_package/Resources/Public/Icons/ce_footer.svg',
-        'fields' => '--palette--;;headers,',
+        'fields' => '--palette--;;headers,footer_github,footer_linkedin,footer_email,',
+    ],
+    [
+        'label' => '',
+        'value' => '',
+        'icon' => '',
+        'field' => ''
+
     ],
 ];
+
+// Add custom fields for the Footer element
+ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footer_github' => [
+        'label' => 'GitHub URL',
+        'config' => [
+            'type' => 'input',
+            'eval' => 'trim',
+        ],
+    ],
+    'footer_linkedin' => [
+        'label' => 'LinkedIn URL',
+        'config' => [
+            'type' => 'input',
+            'eval' => 'trim',
+        ],
+    ],
+    'footer_email' => [
+        'label' => 'Email Address',
+        'config' => [
+            'type' => 'input',
+            'eval' => 'trim',
+        ],
+    ],
+]);
 
 // Loop through and add each element to the tt_content CType dropdown
 foreach ($elements as $element) {

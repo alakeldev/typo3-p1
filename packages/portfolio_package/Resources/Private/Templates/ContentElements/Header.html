@@ -1,3 +1,28 @@
-<header class="portfolio-header">
-    <h1>{data.header}</h1>
-</header>
+<f:layout name="Default" />
+<f:section name="Main">
+    <header class="mainHeader">
+        <div class="container nav-container">
+            <div class="navbar">
+                <f:if condition="{data.image.0}">
+                    <img src="{f:uri.image(image: data.image.0)}" alt="{data.header}" />
+                </f:if>
+                <nav>
+                    <ul>
+                        <li>
+                            <f:link.page pageUid="1" class="nav-link">Home</f:link.page>
+                        </li>
+                        <li>
+                            <f:link.page pageUid="6" class="nav-link">About</f:link.page>
+                        </li>
+                        <li>
+                            <f:link.page pageUid="7" class="nav-link">Projects</f:link.page>
+                        </li>
+                        <li>
+                            <f:link.page pageUid="8" class="nav-link">Contact</f:link.page>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+</f:section>

@@ -1,3 +1,14 @@
-<footer class="portfolio-footer">
-    <p>{data.header}</p>
-</footer>
+<f:layout name="Default" />
+<f:section name="Main">
+    <footer id="footer">
+        <div class="container">
+            <f:if condition="{data.image.0}">
+                <img class="logo custom-shadow" src="{f:uri.image(image: data.image.0)}" alt="{data.header}" />
+            </f:if>
+            <div class="footer-text">{data.header}</div>
+            <f:render partial="SocialIcons" arguments="{_all}" />
+            <div class="footer-rights">&copy;
+                Abdullah. All rights reserved.</div>
+        </div>
+    </footer>
+</f:section>

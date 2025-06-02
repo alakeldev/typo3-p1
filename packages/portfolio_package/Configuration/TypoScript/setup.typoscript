@@ -2,51 +2,32 @@ page = PAGE
 page.10 < styles.content.get
 page.includeCSS.portfolio = EXT:portfolio_package/Resources/Public/Css/style.css
 
+lib.contentElement {
+  templateRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
+  }
+  partialRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Partials/
+  }
+  layoutRootPaths {
+    10 = EXT:portfolio_package/Resources/Private/Layouts/
+  }
+}
 
 tt_content.portfolio_header =< lib.contentElement
-tt_content.portfolio_header {
-  templateName = Header
-  templateRootPaths {
-    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
-  }
-}
+tt_content.portfolio_header.templateName = Header
 
 tt_content.portfolio_hero =< lib.contentElement
-tt_content.portfolio_hero {
-  templateName = Hero
-  templateRootPaths {
-    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
-  }
-}
+tt_content.portfolio_hero.templateName = Hero
 
 tt_content.portfolio_aboutblock =< lib.contentElement
-tt_content.portfolio_aboutblock {
-  templateName = Aboutblock
-  templateRootPaths {
-    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
-  }
-}
+tt_content.portfolio_aboutblock.templateName = Aboutblock
 
 tt_content.portfolio_projectitem =< lib.contentElement
-tt_content.portfolio_projectitem {
-  templateName = ProjectItem
-  templateRootPaths {
-    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
-  }
-}
+tt_content.portfolio_projectitem.templateName = ProjectItem
 
 tt_content.portfolio_contactblock =< lib.contentElement
-tt_content.portfolio_contactblock {
-  templateName = Contactblock
-  templateRootPaths {
-    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
-  }
-}
+tt_content.portfolio_contactblock.templateName = Contactblock
 
 tt_content.portfolio_footer =< lib.contentElement
-tt_content.portfolio_footer {
-  templateName = Footer
-  templateRootPaths {
-    10 = EXT:portfolio_package/Resources/Private/Templates/ContentElements/
-  }
-}
+tt_content.portfolio_footer.templateName = Footer
