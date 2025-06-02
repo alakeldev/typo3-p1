@@ -14,6 +14,26 @@ lib.contentElement {
   }
 }
 
+lib.globalHeader = CONTENT
+lib.globalHeader {
+  table = tt_content
+  select {
+    pidInList = 11
+    where = CType = 'portfolio_header'
+    max = 1
+  }
+}
+
+lib.globalFooter = CONTENT
+lib.globalFooter {
+  table = tt_content
+  select {
+    pidInList = 11
+    where = CType = 'portfolio_footer'
+    max = 1
+  }
+}
+
 tt_content.portfolio_header =< lib.contentElement
 tt_content.portfolio_header.templateName = Header
 

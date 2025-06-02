@@ -44,13 +44,6 @@ $elements = [
         'icon'   => 'EXT:portfolio_package/Resources/Public/Icons/ce_footer.svg',
         'fields' => '--palette--;;headers,footer_github,footer_linkedin,footer_email,',
     ],
-    [
-        'label' => '',
-        'value' => '',
-        'icon' => '',
-        'field' => ''
-
-    ],
 ];
 
 // Add custom fields for the Footer element

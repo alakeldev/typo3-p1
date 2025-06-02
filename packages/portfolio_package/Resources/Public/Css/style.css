@@ -286,3 +286,73 @@ nav ul {
     fill: #fff;
     transform: scale(1.15);
 }
+
+
+/* Project Card Styles */
+.project-item .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.card {
+    background: #181818;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.28);
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background: #222;
+}
+
+.card-body {
+    padding: 24px 20px 20px 20px;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: #03f96e;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #bdbdbd;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    min-height: 60px;
+}
+
+.btn.view-project-btn.live-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #03f96e 0%, #00c3ff 100%);
+    color: #181818;
+    font-weight: 600;
+    padding: 10px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(3, 249, 110, 0.15);
+}
+
+.btn.view-project-btn.live-btn:hover {
+    background: linear-gradient(90deg, #00c3ff 0%, #03f96e 100%);
+    color: #fff;
+}

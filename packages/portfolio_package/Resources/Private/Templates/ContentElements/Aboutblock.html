@@ -4,12 +4,6 @@
         <div class="container">
             <h2>{data.header}</h2>
             <p>{data.bodytext}</p>
-            <f:if condition="{data.image.0}">
-                <img class="logo custom-shadow" src="{f:uri.image(image: data.image.0)}" alt="{data.header}" />
-            </f:if>
-            <f:if condition="{data.link}">
-                <a href="{data.link}" class="btn cvBtn" target="_blank">Download CV</a>
-            </f:if>
         </div>
     </section>
 </f:section>

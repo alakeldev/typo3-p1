@@ -1,19 +1,17 @@
 <f:layout name="Default" />
 <f:section name="Main">
-    <section id="projects">
+    <section class="project-item">
         <div class="container">
-            <div class="row">
-                <div class="card">
-                    <f:if condition="{data.image.0}">
-                        <img class="logo custom-shadow" src="{f:uri.image(image: data.image.0)}" alt="{data.header}" />
+            <div class="card">
+                <f:if condition="{data.image.0}">
+                    <img class="project-image" src="{f:uri.image(image: data.image.0)}" alt="{data.header}" />
+                </f:if>
+                <div class="card-body">
+                    <h3 class="card-title">{data.header}</h3>
+                    <p class="card-text">{data.bodytext}</p>
+                    <f:if condition="{data.link}">
+                        <a href="{data.link}" class="btn view-project-btn live-btn" target="_blank">View Project</a>
                     </f:if>
-                    <div class="card-body">
-                        <h3>{data.header}</h3>
-                        <p>{data.bodytext}</p>
-                        <f:if condition="{data.link}">
-                            <a href="{data.link}" class="btn view-project-btn live-btn" target="_blank">View Project</a>
-                        </f:if>
-                    </div>
                 </div>
             </div>
         </div>
