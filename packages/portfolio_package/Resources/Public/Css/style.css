@@ -356,3 +356,19 @@ nav ul {
     background: linear-gradient(90deg, #00c3ff 0%, #03f96e 100%);
     color: #fff;
 }
+
+/* Add to: /home/alakel/portfolio_template/Resources/Public/Css/style.css */
+.about-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}

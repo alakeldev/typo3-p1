@@ -17,14 +17,11 @@ lib.contentElement {
 tt_content.portfolio_hero =< lib.contentElement
 tt_content.portfolio_hero.templateName = Hero
 
-tt_content.portfolio_aboutblock =< lib.contentElement
-tt_content.portfolio_aboutblock.templateName = Aboutblock
+tt_content.portfolio_about =< lib.contentElement
+tt_content.portfolio_about.templateName = About
 
 tt_content.portfolio_projectitem =< lib.contentElement
 tt_content.portfolio_projectitem.templateName = ProjectItem
-
-tt_content.portfolio_contactblock =< lib.contentElement
-tt_content.portfolio_contactblock.templateName = Contactblock
 
 tt_content.portfolio_header =< lib.contentElement
 tt_content.portfolio_header.templateName = Header

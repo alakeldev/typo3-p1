@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58f111e6c030873d7bf86af0a9c6d4a5",
+    "content-hash": "fdb552748d5e08bd28cd4dca37698be7",
     "packages": [
         {
             "name": "alakel/portfolio_package",
@@ -12,12 +12,15 @@
             "dist": {
                 "type": "path",
                 "url": "packages/portfolio_package",
-                "reference": "82d005018bf5071db69ef2a31cb0cb67a75c8ddb"
+                "reference": "7b3cda944c1e5a78efafce81d3c168d71e68b9a0"
             },
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
-                    "extension-key": "portfolio_package"
+                    "extension-key": "portfolio_package",
+                    "content-blocks": [
+                        "ContentBlocks/ContentElements"
+                    ]
                 }
             },
             "autoload": {
@@ -840,6 +843,84 @@
                 "source": "https://github.com/firebase/php-jwt/tree/v6.11.1"
             },
             "time": "2025-04-09T20:32:01+00:00"
+        },
+        {
+            "name": "friendsoftypo3/content-blocks",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
+                "reference": "93d69f657264285bd3db795e9d227769a7368c7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/93d69f657264285bd3db795e9d227769a7368c7f",
+                "reference": "93d69f657264285bd3db795e9d227769a7368c7f",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/var-exporter": "^7.0",
+                "typo3/cms-backend": "^13.4.5",
+                "typo3/cms-core": "^13.4.5",
+                "typo3/cms-fluid": "^13.4.5",
+                "typo3/cms-frontend": "^13.4.5"
+            },
+            "replace": {
+                "contentblocks/content-blocks": "*"
+            },
+            "require-dev": {
+                "bnf/phpstan-psr-container": "^1.0.1",
+                "contentblocks/examples": "@dev",
+                "friendsofphp/php-cs-fixer": "^3.22",
+                "friendsoftypo3/phpstan-typo3": "^0.9.0",
+                "phpstan/phpstan": "^1.10.22",
+                "phpstan/phpstan-phpunit": "^1.3.13",
+                "typo3/cms-extbase": "^13.4.5",
+                "typo3/cms-extensionmanager": "^13.4.5",
+                "typo3/cms-filelist": "^13.4.5",
+                "typo3/cms-install": "^13.4.5",
+                "typo3/cms-lowlevel": "^13.4.5",
+                "typo3/cms-rte-ckeditor": "^13.4.5",
+                "typo3/cms-tstemplate": "^13.4.5",
+                "typo3/cms-workspaces": "^13.4.5",
+                "typo3/coding-standards": "^0.8",
+                "typo3/testing-framework": "^9"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "serviceProvider": "TYPO3\\CMS\\ContentBlocks\\ServiceProvider"
+                    },
+                    "web-dir": ".Build/public",
+                    "extension-key": "content_blocks"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\ContentBlocks\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Content Types Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Content Blocks - Content Types API | Define reusable components via YAML",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2025-05-31T16:11:09+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

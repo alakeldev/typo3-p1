@@ -1,41 +1,31 @@
 TCEFORM.tt_content.CType {
-  removeItems = header, text, textpic, image, bullets, table, uploads, media, search, login, menu, shortcut, html, script, splash, div, list, menu_subpages, menu_recentlyupdated, menu_relatedpages, menu_categorizedpages, menu_section, menu_section_pages, menu_sitemap, menu_sitemap_pages, menu_sitemap_categories, menu_sitemap_categories_pages, menu_sitemap_categories_list, menu_sitemap_categories_list_pages, menu_sitemap_categories_list_categories, menu_sitemap_categories_list_categories_pages, menu_sitemap_categories_list_categories_list, menu_sitemap_categories_list_categories_list_pages, menu_sitemap_categories_list_categories_list_categories, menu_sitemap_categories_list_categories_list_categories_pages, menu_sitemap_categories_list_categories_list_categories_list, menu_sitemap_categories_list_categories_list_categories_list_pages, menu_sitemap_categories_list_categories_list_categories_list_categories, menu_sitemap_categories_list_categories_list_categories_list_categories_pages, menu_sitemap_categories_list_categories_list_categories_list_categories_list, menu_sitemap_categories_list_categories_list_categories_list_categories_list_pages, menu_sitemap_categories_list_categories_list_categories_list_categories_list_categories, menu_sitemap_categories_list_categories_list_categories_list_categories_list_categories_pages, menu_sitemap_categories_list_categories_list_categories_list_categories_list_categories_list, menu_sitemap_categories_list_categories_list_categories_list_categories_list_categories_list_pages, carousel, accordion, tabs, grid-elements, carousel-item, accordion-item, tab-item
-  keepItems = portfolio_header,portfolio_hero,portfolio_aboutblock,portfolio_projectitem,portfolio_contactblock,portfolio_footer
+  keepItems = portfolio_header,portfolio_hero,portfolio_about,portfolio_projectitem,portfolio_footer
 }
 
-mod.wizards.newContentElement.wizardItems.portfolio_package {
-    header = My Portfolio Elements
-    show = *
-    elements {
-        portfolio_header {
-            iconIdentifier = actions-star
-            title = Header
-            description = Header element for portfolio
-        }
-        portfolio_hero {
-            iconIdentifier = actions-user
-            title = Hero Section
-            description = Hero section for portfolio
-        }
-        portfolio_aboutblock {
-            iconIdentifier = actions-info
-            title = About Block
-            description = About block for portfolio
-        }
-        portfolio_projectitem {
-            iconIdentifier = actions-briefcase
-            title = Project Item
-            description = Project item for portfolio
-        }
-        portfolio_contactblock {
-            iconIdentifier = actions-contact
-            title = Contact Block
-            description = Contact block for portfolio
-        }
-        portfolio_footer {
-            iconIdentifier = actions-link
-            title = Footer
-            description = Footer element for portfolio
-        }
+mod.wizards.newContentElement.wizardItems.portfolio_package.elements {
+    portfolio_header {
+        iconIdentifier = actions-star
+        title = Header
+        description = Header element
+    }
+    portfolio_hero {
+        iconIdentifier = actions-user
+        title = Hero Section
+        description = Hero section
+    }
+    portfolio_about {
+        iconIdentifier = actions-briefcase
+        title = About Section
+        description = About section
+    }
+    portfolio_projectitem {
+        iconIdentifier = actions-briefcase
+        title = Project Item
+        description = Project item
+    }
+    portfolio_footer {
+        iconIdentifier = actions-link
+        title = Footer
+        description = Footer element
     }
 }

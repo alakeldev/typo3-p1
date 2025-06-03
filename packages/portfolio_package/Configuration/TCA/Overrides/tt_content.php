@@ -11,53 +11,18 @@ ExtensionManagementUtility::addPageTSConfig(
     '@import "EXT:portfolio_package/Configuration/PageTS/Mod/Wizards/NewContentElement.tsconfig"'
 );
 
-// Define your custom content elements
-$elements = [
-    [
-        'label'  => 'Header',
-        'value'  => 'portfolio_header',
-        'icon'   => 'actions-star',
-        'fields' => '--palette--;;headers, image,',
-        'group'  => 'portfolio_package',
-    ],
-    [
-        'label'  => 'Hero Section',
-        'value'  => 'portfolio_hero',
-        'icon'   => 'actions-user',
-        'fields' => '--palette--;;headers, bodytext, image, link,',
-        'group'  => 'portfolio_package',
-    ],
-    [
-        'label'  => 'About Block',
-        'value'  => 'portfolio_aboutblock',
-        'icon'   => 'actions-briefcase',
-        'fields' => '--palette--;;headers, bodytext,',
-        'group'  => 'portfolio_package',
-    ],
-    [
-        'label'  => 'Project Item',
-        'value'  => 'portfolio_projectitem',
-        'icon'   => 'actions-briefcase',
-        'fields' => '--palette--;;headers, bodytext, image, link,',
-        'group'  => 'portfolio_package',
-    ],
-    [
-        'label'  => 'Contact Block',
-        'value'  => 'portfolio_contactblock',
-        'icon'   => 'actions-contact',
-        'fields' => '--palette--;;headers, bodytext,',
-        'group'  => 'portfolio_package',
-    ],
-    [
-        'label'  => 'Footer',
-        'value'  => 'portfolio_footer',
-        'icon'   => 'actions-link',
-        'fields' => '--palette--;;headers,footer_github,footer_linkedin,footer_email,',
-        'group'  => 'portfolio_package',
-    ],
-];
+// // Register Contact Plugin
+// ExtensionManagementUtility::addPlugin(
+//     [
+//         'Contact Item',
+//         'portfolio_contactitem',
+//         'actions-contact'
+//     ],
+//     'CType',
+//     'portfolio_package'
+// );
 
-// Add custom fields for the Footer element
+// Add custom fields for the Footer (on tt_content table)
 ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'footer_github' => [
         'label' => 'GitHub URL',
@@ -81,6 +46,51 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', [
         ],
     ],
 ]);
+ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content',
+    'footer_github,footer_linkedin,footer_email',
+    'portfolio_footer',
+    'after:bodytext'
+);
+
+// Define your custom content elements (Header and Footer included)
+$elements = [
+    [
+        'label'  => 'Header',
+        'value'  => 'portfolio_header',
+        'icon'   => 'actions-star',
+        'fields' => '--palette--;;headers, image,',
+        'group'  => 'portfolio_package',
+    ],
+    [
+        'label'  => 'Hero Section',
+        'value'  => 'portfolio_hero',
+        'icon'   => 'actions-user',
+        'fields' => '--palette--;;headers, bodytext, image, link,',
+        'group'  => 'portfolio_package',
+    ],
+    [
+        'label'  => 'About Section',
+        'value'  => 'portfolio_about',
+        'icon'   => 'actions-briefcase',
+        'fields' => '--palette--;;headers, bodytext,',
+        'group'  => 'portfolio_package',
+    ],
+    [
+        'label'  => 'Project Item',
+        'value'  => 'portfolio_projectitem',
+        'icon'   => 'actions-briefcase',
+        'fields' => '--palette--;;headers, bodytext, image, link,',
+        'group'  => 'portfolio_package',
+    ],
+    [
+        'label'  => 'Footer',
+        'value'  => 'portfolio_footer',
+        'icon'   => 'actions-link',
+        'fields' => '--palette--;;headers,footer_github,footer_linkedin,footer_email,',
+        'group'  => 'portfolio_package',
+    ],
+];
 
 // Register the elements in CType dropdown and assign to the group
 foreach ($elements as $element) {

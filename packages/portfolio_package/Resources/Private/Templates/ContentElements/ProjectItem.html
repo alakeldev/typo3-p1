@@ -4,14 +4,13 @@
         <div class="container">
             <div class="card">
                 <f:if condition="{data.image.0}">
-                    <img class="project-image" src="{f:uri.image(image: data.image.0)}" alt="{data.header}" />
+                    <div class="card-img-top">
+                        <img src="{f:uri.image(image: data.image.0)}" alt="{data.header}" />
+                    </div>
                 </f:if>
                 <div class="card-body">
                     <h3 class="card-title">{data.header}</h3>
                     <p class="card-text">{data.bodytext}</p>
-                    <f:if condition="{data.link}">
-                        <a href="{data.link}" class="btn view-project-btn live-btn" target="_blank">View Project</a>
-                    </f:if>
                 </div>
             </div>
         </div>
